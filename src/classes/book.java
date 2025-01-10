@@ -1,4 +1,4 @@
-package classes.book;
+package classes;
 
 public class book {
     private String title;

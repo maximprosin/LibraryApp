@@ -1,14 +1,14 @@
-package classes.book;
+package classes;
 
 import java.time.LocalDate;
 
 public class loan {
-    private classes.book.book book;
-    private classes.users.user user;
+    private book book;
+    private user user;
     private LocalDate loanDate;
     private LocalDate returnDate;
 
-    public loan(classes.book.book book, classes.users.user user) {
+    public loan(book book, user user) {
         this.book = book;
         this.user = user;
         this.loanDate = LocalDate.now();
@@ -19,11 +19,11 @@ public class loan {
         this.returnDate = LocalDate.now();
     }
 
-    public classes.book.book getBook() {
+    public book getBook() {
         return book;
     }
 
-    public classes.users.user getUser() {
+    public user getUser() {
         return user;
     }
 

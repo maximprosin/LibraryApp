@@ -1,7 +1,4 @@
-package classes.users;
-
-import classes.book.book;
-import classes.book.loan;
+package classes;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -35,7 +32,7 @@ public class reader extends user {
     public void returnBook(book book) {
         if (isLoggedIn()) {
             loan loanToRemove = null;
-            for (classes.book.loan loan : currentLoans) {
+            for (loan loan : currentLoans) {
                 if (loan.getBook().equals(book)) {
                     loanToRemove = loan;
                     break;
@@ -58,7 +55,7 @@ public class reader extends user {
     public void viewCurrentLoans() {
         if (isLoggedIn()) {
             System.out.println(getName() + ", ваши текущие займы:");
-            for (classes.book.loan loan : currentLoans) {
+            for (loan loan : currentLoans) {
                 System.out.println(loan);
             }
         } else {
