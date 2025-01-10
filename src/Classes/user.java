@@ -1,14 +1,12 @@
 package Classes;
 
-import java.util.Objects;
-
-public class User {
+public class user {
     private String name;
     private String email;
     private String password;
     private boolean loggedIn = false;
 
-    public User(String name, String email, String password) {
+    public user(String name, String email, String password) {
         this.name = name;
         this.email = email;
         this.password = password;

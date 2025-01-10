@@ -3,28 +3,28 @@ package Classes;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Library {
-    private final List<Book> books;
+public class library {
+    private final List<book> books;
 
-    public Library() {
+    public library() {
         books = new ArrayList<>();
     }
 
-    public void addBook(Book book) {
+    public void addBook(book book) {
         books.add(book);
     }
 
-    public void removeBook(Book book) {
+    public void removeBook(book book) {
         books.remove(book);
     }
 
-    public void editBook(Book book) {
+    public void editBook(book book) {
         int index = books.indexOf(book);
         books.set(index, book);
     }
 
-    public Book findBook(String title) {
-        for (Book book : books) {
+    public book findBook(String title) {
+        for (Classes.book book : books) {
             if (book.getTitle().equals(title)) {
                 return book;
             }
@@ -32,9 +32,9 @@ public class Library {
         return null;
     }
 
-    public List<Book> listAvailableBooks() {
-        List<Book> availableBooks = new ArrayList<>();
-        for (Book book : books) {
+    public List<book> listAvailableBooks() {
+        List<book> availableBooks = new ArrayList<>();
+        for (Classes.book book : books) {
             if (book.isAvailable()) {
                 availableBooks.add(book);
             }
@@ -42,7 +42,7 @@ public class Library {
         return availableBooks;
     }
 
-    public List<Book> listAllBooks() {
+    public List<book> listAllBooks() {
         return books;
     }
 }

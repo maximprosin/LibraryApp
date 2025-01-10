@@ -1,8 +1,7 @@
-import Classes.*;
-import Tests.LibraryAppTest;
+import Tests.libraryapptest;
 
 public class Main {
     public static void main(String[] args) {
-        LibraryAppTest.mainTest();
+        libraryapptest.mainTest();
     }
 }

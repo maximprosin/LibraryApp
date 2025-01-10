@@ -2,13 +2,13 @@ package Classes;
 
 import java.time.LocalDate;
 
-public class Loan {
-    private Book book;
-    private User user;
+public class loan {
+    private Classes.book book;
+    private Classes.user user;
     private LocalDate loanDate;
     private LocalDate returnDate;
 
-    public Loan(Book book, User user) {
+    public loan(Classes.book book, Classes.user user) {
         this.book = book;
         this.user = user;
         this.loanDate = LocalDate.now();
@@ -19,11 +19,11 @@ public class Loan {
         this.returnDate = LocalDate.now();
     }
 
-    public Book getBook() {
+    public Classes.book getBook() {
         return book;
     }
 
-    public User getUser() {
+    public Classes.user getUser() {
         return user;
     }
 
