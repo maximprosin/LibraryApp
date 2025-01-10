@@ -1,4 +1,4 @@
-package classes.user;
+package classes.users;
 
 import classes.book.book;
 import classes.book.loan;

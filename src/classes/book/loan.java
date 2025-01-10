@@ -4,11 +4,11 @@ import java.time.LocalDate;
 
 public class loan {
     private classes.book.book book;
-    private classes.user.user user;
+    private classes.users.user user;
     private LocalDate loanDate;
     private LocalDate returnDate;
 
-    public loan(classes.book.book book, classes.user.user user) {
+    public loan(classes.book.book book, classes.users.user user) {
         this.book = book;
         this.user = user;
         this.loanDate = LocalDate.now();
@@ -23,7 +23,7 @@ public class loan {
         return book;
     }
 
-    public classes.user.user getUser() {
+    public classes.users.user getUser() {
         return user;
     }
 

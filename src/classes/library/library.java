@@ -9,7 +9,7 @@ public class library {
     private final List<book> books;
 
     public library() {
-        books = new ArrayList<>();
+        this.books = new ArrayList<>();
     }
 
     public void addBook(book book) {

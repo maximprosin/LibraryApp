@@ -1,4 +1,4 @@
-package classes.user;
+package classes.users;
 
 public class user {
     private String name;

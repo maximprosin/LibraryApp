@@ -1,6 +1,6 @@
 package tests;
 
-import classes.user.*;
+import classes.users.*;
 import classes.book.*;
 import classes.library.*;
 
