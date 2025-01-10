@@ -67,6 +67,10 @@ public class LibraryAppTest {
 
             library.listAllBooks();
 
+            librarian1.addBook(book10);
+
+            library.listAllBooks();
+
             librarian1.logout();
         } else {
             System.out.println("Извините, но ваши данные не совпадают, попробуйте еще раз");
