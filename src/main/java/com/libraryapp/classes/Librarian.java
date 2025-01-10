@@ -1,24 +1,24 @@
-package classes;
+package com.libraryapp.classes;
 
-public class librarian extends user {
-    private library library;
+public class Librarian extends User {
+    private Library library;
 
-    public librarian(String name, String email, String password, library library) {
+    public Librarian(String name, String email, String password, Library library) {
         super(name, email, password);
         this.library = library;
     }
 
-    public void addBook(book book) {
+    public void addBook(Book book) {
         library.addBook(book);
         System.out.println("Книга " + book.getTitle() + " была добавлена на полку");
     }
 
-    public void removeBook(book book) {
+    public void removeBook(Book book) {
         library.removeBook(book);
         System.out.println("Книга " + book.getTitle() + " была убрана с полки");
     }
 
-    public void editBook(book book) {
+    public void editBook(Book book) {
         library.editBook(book);
         System.out.println("Книга " + book.getTitle() + " была отредактирована и возвращена на полку");
     }
