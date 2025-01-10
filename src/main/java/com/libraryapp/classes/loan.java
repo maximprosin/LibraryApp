@@ -1,4 +1,4 @@
-package classes;
+package main.java.com.libraryapp.classes;
 
 import java.time.LocalDate;
 

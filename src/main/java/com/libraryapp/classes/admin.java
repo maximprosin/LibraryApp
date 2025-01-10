@@ -1,4 +1,4 @@
-package classes;
+package main.java.com.libraryapp.classes;
 
 import java.util.ArrayList;
 import java.util.List;

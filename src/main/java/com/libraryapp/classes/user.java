@@ -1,4 +1,4 @@
-package classes;
+package main.java.com.libraryapp.classes;
 
 public class user {
     private String name;

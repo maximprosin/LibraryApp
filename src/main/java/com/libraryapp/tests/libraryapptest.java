@@ -1,6 +1,6 @@
-package tests;
+package main.java.com.libraryapp.tests;
 
-import static tests.datatest.*;
+import static main.java.com.libraryapp.tests.datatest.*;
 
 public class libraryapptest {
     public static void mainTest() {
