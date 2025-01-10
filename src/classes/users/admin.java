@@ -1,29 +1,29 @@
-package Classes;
+package classes.users;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Admin extends User {
-    private List<User> users;
+public class admin extends user {
+    private List<user> users;
 
-    public Admin(String name, String email, String password) {
+    public admin(String name, String email, String password) {
         super(name, email, password);
         this.users = new ArrayList<>();
     }
 
-    public void addUser(User user) {
+    public void addUser(user user) {
         users.add(user);
         System.out.println("Пользователь " + user.getName() + " был добавлен");
     }
 
-    public void removeUser(User user) {
+    public void removeUser(user user) {
         users.remove(user);
         System.out.println("Пользователь " + user.getName() + " был удален");
     }
 
     public void listUsers() {
         System.out.println("Список пользователей:");
-        for (User user : users) {
+        for (classes.users.user user : users) {
             System.out.println(user.getName());
         }
     }

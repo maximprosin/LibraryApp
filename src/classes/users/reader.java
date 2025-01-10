@@ -1,22 +1,25 @@
-package Classes;
+package classes.users;
+
+import classes.book.book;
+import classes.book.loan;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Reader extends User {
+public class reader extends user {
     private final List<String> borrowingHistory;
-    private final List<Loan> currentLoans;
+    private final List<loan> currentLoans;
 
-    public Reader(String name, String email, String password) {
+    public reader(String name, String email, String password) {
         super(name, email, password);
         this.borrowingHistory = new ArrayList<>();
         this.currentLoans = new ArrayList<>();
     }
 
-    public void borrowBook(Book book) {
+    public void borrowBook(book book) {
         if (isLoggedIn()) {
             if (book.isAvailable()) {
-                Loan loan = new Loan(book, this);
+                loan loan = new loan(book, this);
                 currentLoans.add(loan);
                 book.updateStatus(false);
                 borrowingHistory.add("Взята книга: " + book.getTitle());
@@ -29,10 +32,10 @@ public class Reader extends User {
         }
     }
 
-    public void returnBook(Book book) {
+    public void returnBook(book book) {
         if (isLoggedIn()) {
-            Loan loanToRemove = null;
-            for (Loan loan : currentLoans) {
+            loan loanToRemove = null;
+            for (classes.book.loan loan : currentLoans) {
                 if (loan.getBook().equals(book)) {
                     loanToRemove = loan;
                     break;
@@ -55,7 +58,7 @@ public class Reader extends User {
     public void viewCurrentLoans() {
         if (isLoggedIn()) {
             System.out.println(getName() + ", ваши текущие займы:");
-            for (Loan loan : currentLoans) {
+            for (classes.book.loan loan : currentLoans) {
                 System.out.println(loan);
             }
         } else {
