@@ -1,13 +1,13 @@
-package main.java.com.libraryapp.classes;
+package com.libraryapp.classes;
 
-public class book {
+public class Book {
     private String title;
     private String author;
     private String genre;
     private String ISBN;
     private boolean isAvailable;
 
-    public book(String title, String author, String genre, String ISBN, boolean isAvailable) {
+    public Book(String title, String author, String genre, String ISBN, boolean isAvailable) {
         this.title = title;
         this.author = author;
         this.genre = genre;

@@ -1,30 +1,30 @@
-package main.java.com.libraryapp.classes;
+package com.libraryapp.classes;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class library {
-    private final List<book> books;
+public class Library {
+    private final List<Book> books;
 
-    public library() {
+    public Library() {
         this.books = new ArrayList<>();
     }
 
-    public void addBook(book book) {
+    public void addBook(Book book) {
         books.add(book);
     }
 
-    public void removeBook(book book) {
+    public void removeBook(Book book) {
         books.remove(book);
     }
 
-    public void editBook(book book) {
+    public void editBook(Book book) {
         int index = books.indexOf(book);
         books.set(index, book);
     }
 
-    public book findBook(String title) {
-        for (book book : books) {
+    public Book findBook(String title) {
+        for (Book book : books) {
             if (book.getTitle().equals(title)) {
                 return book;
             }
@@ -32,9 +32,9 @@ public class library {
         return null;
     }
 
-    public List<book> listAvailableBooks() {
-        List<book> availableBooks = new ArrayList<>();
-        for (book book : books) {
+    public List<Book> listAvailableBooks() {
+        List<Book> availableBooks = new ArrayList<>();
+        for (Book book : books) {
             if (book.isAvailable()) {
                 availableBooks.add(book);
             }
@@ -42,7 +42,7 @@ public class library {
         return availableBooks;
     }
 
-    public List<book> listAllBooks() {
+    public List<Book> listAllBooks() {
         return books;
     }
 }

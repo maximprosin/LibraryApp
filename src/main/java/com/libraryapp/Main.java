@@ -1,9 +1,8 @@
-package main.java.com.libraryapp;
+package com.libraryapp;
 
-import main.java.com.libraryapp.tests.libraryapptest;
 
 public class Main {
     public static void main(String[] args) {
-        libraryapptest.mainTest();
+        System.out.println("Hello World!");
     }
 }

@@ -1,12 +1,12 @@
-package main.java.com.libraryapp.classes;
+package com.libraryapp.classes;
 
-public class user {
+public class User {
     private String name;
     private String email;
     private String password;
     private boolean loggedIn = false;
 
-    public user(String name, String email, String password) {
+    public User(String name, String email, String password) {
         this.name = name;
         this.email = email;
         this.password = password;

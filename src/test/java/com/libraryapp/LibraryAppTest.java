@@ -1,8 +1,8 @@
-package main.java.com.libraryapp.tests;
+package com.libraryapp;
 
-import static main.java.com.libraryapp.tests.datatest.*;
+import static com.libraryapp.MockData.*;
 
-public class libraryapptest {
+public class LibraryAppTest {
     public static void mainTest() {
         admin1.login("maximprosin647@google.com", "12345");
 
