@@ -1,8 +1,6 @@
-package Tests;
+package tests;
 
-import Classes.*;
-
-import static Tests.datatest.*;
+import static tests.datatest.*;
 
 public class libraryapptest {
     public static void mainTest() {

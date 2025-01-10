@@ -1,6 +1,8 @@
-package Tests;
+package tests;
 
-import Classes.*;
+import classes.user.*;
+import classes.book.*;
+import classes.library.*;
 
 public class datatest {
     public static book book1 = new book("To Kill a Mockingbird", "Harper Lee", "Fiction", "978-0-06-112008-4", true);
@@ -14,7 +16,7 @@ public class datatest {
     public static book book9 = new book("Fahrenheit 451", "Ray Bradbury", "Dystopian", "978-1-4516-7331-9", false);
     public static book book10 = new book("Brave New World", "Aldous Huxley", "Dystopian", "978-0-06-085052-4", true);
 
-    public static library library = new library();
+    public static classes.library.library library = new library();
 
     public static reader reader1 = new reader("Jack", "jack12@mail.ru", "123");
     public static reader reader2 = new reader("Mark", "mark111@google.com", "12345");

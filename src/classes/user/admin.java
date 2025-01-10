@@ -1,4 +1,4 @@
-package Classes;
+package classes.user;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,7 +23,7 @@ public class admin extends user {
 
     public void listUsers() {
         System.out.println("Список пользователей:");
-        for (Classes.user user : users) {
+        for (classes.user.user user : users) {
             System.out.println(user.getName());
         }
     }

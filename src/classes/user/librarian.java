@@ -1,9 +1,11 @@
-package Classes;
+package classes.user;
+
+import classes.book.book;
 
 public class librarian extends user {
-    private Classes.library library;
+    private classes.library.library library;
 
-    public librarian(String name, String email, String password, Classes.library library) {
+    public librarian(String name, String email, String password, classes.library.library library) {
         super(name, email, password);
         this.library = library;
     }

@@ -1,4 +1,6 @@
-package Classes;
+package classes.library;
+
+import classes.book.book;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,7 +26,7 @@ public class library {
     }
 
     public book findBook(String title) {
-        for (Classes.book book : books) {
+        for (classes.book.book book : books) {
             if (book.getTitle().equals(title)) {
                 return book;
             }
@@ -34,7 +36,7 @@ public class library {
 
     public List<book> listAvailableBooks() {
         List<book> availableBooks = new ArrayList<>();
-        for (Classes.book book : books) {
+        for (classes.book.book book : books) {
             if (book.isAvailable()) {
                 availableBooks.add(book);
             }
